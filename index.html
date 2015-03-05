@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>刮刮卡</title>
+    <style>
+    *{margin:0;padding:0;}
+    .ggkBox{
+      position: relative;
+      width:320px;
+      height:200px;
+      background:orange;
+    }
+    .ggk_txt{
+      display:block;
+      background:#fff;
+      height:50px;
+      line-height:50px;
+      text-align:center;
+      width:200px;
+      position: absolute;
+      bottom:10px;
+      right:10px;
+    }
+    #j_ggk{
+      margin:140px 0 0 110px;
+      z-index:9999;
+    }
+    </style>
+</head>
+
+<body>
+  <div class="ggkBox">
+      <span class="ggk_txt">一等奖</span>
+      <canvas id="j_ggk"></canvas>
+  </div>
+    <script src="ggk.js"></script>
+</body>
+</html>
